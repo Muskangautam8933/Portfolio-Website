@@ -354,18 +354,18 @@ a{
 }
 
 #project1{
-    background-image: url(./images/project/tind\ &\ orange.png);
+    background-image: url(./images/project/rythmzone.png);
 }
 #project2{
     margin-left: 120px;
-    background-image: url(./images/project/music.png);
+    background-image: url(./images/project/password-generator.png);
 }
 #project3{
-    background-image: url(./images/project/home.png);
+    background-image: url(./images/project/Portfolio.png);
 }
 #project4{
     margin-left: 120px;
-    background-image: url(./images/project/building.png);
+    background-image: url(./images/project/cameraa.png);
 }
 
 
@@ -627,6 +627,13 @@ footer{
 
 
 
+.img {
+    display: inline-block; /* Image ko dikhane ke liye */
+    width: 30px;
+    height: 30px; 
+    cursor: pointer; 
+    margin: 10px;
+}
 
 
 
