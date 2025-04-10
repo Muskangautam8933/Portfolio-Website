@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
     font-family: "Be Vietnam Pro", sans-serif;
     scroll-behavior: smooth;
 }
@@ -21,6 +20,7 @@
     margin: 0 auto;
 }
 
+/* navigation bar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -53,10 +53,9 @@
 }
 
 .nav-item div{
-font-size: 20px;
-font-weight: 500;
-cursor: pointer;
-
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .nav-item div a{
@@ -72,6 +71,10 @@ a{
     transition: 0.8s;
     font-weight: bold;
 }
+/* end of nav bar */
+
+
+/* hero section */
 .hero-section{
     position:relative;
     display:flex;
@@ -79,8 +82,8 @@ a{
     align-items: center;
     width: 100%;
     gap: 5rem;
-    margin:2rem auto;
-    padding: 5% 0;
+    margin:4rem auto;
+    padding: 0 1rem;
     padding-bottom: 8rem;
     
 }
@@ -88,14 +91,15 @@ a{
 
 .faded-text {
     position: absolute;  /* Fix the position relative to the hero section */
-    bottom: 0;  /* Align it to the bottom */
-    left: 20px;  /* Shift it slightly from the left */
-    font-size: 4rem;  /* Adjust the text size */
-    color: rgba(231, 231, 231);  /* Make it faded */
+    bottom: -16%;  /* Align it to the bottom */
+    left: -5%;  
+    font-size: 7rem; 
+    color: rgba(231, 231, 231); 
     font-weight: bold;
+    transition: all 3s;
     user-select: none;
-    z-index: -1; /* Ensures it's behind other content */
-    white-space: nowrap; /* Prevents text from wrapping */
+    z-index: -1;
+    white-space: nowrap; 
     
     
 }
@@ -117,7 +121,7 @@ a{
 }
 .role{
     color:#4e45d5;
-    font-weight: 80;
+    font-weight: 800;
 }
 
 .hero-section-sub-heading{
@@ -171,6 +175,7 @@ a{
     display: none;
 }
 
+/* hero section right */
 .hero-section-right{
     position: relative;
     width: 50%;
@@ -213,13 +218,13 @@ a{
 
     50%{
         transform: scale(1.1);
-        filter: grayscale(0);
+        filter: grayscale(1);
         box-shadow: 3px 3px 10px black;
     }
 
     100%{
         transform: scale(1);
-        filter: grayscale(1);
+        filter: grayscale(0);
     }
 }
 
@@ -370,6 +375,8 @@ a{
 
 
 @media (max-width:1300px){
+    
+/* @media only screen and (max-width:1300px){ */
 
     .page-header{
         padding-top: 30px;
@@ -634,8 +641,4 @@ footer{
     cursor: pointer; 
     margin: 10px;
 }
-
-
-
-
 
